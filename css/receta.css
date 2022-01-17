@@ -1,0 +1,125 @@
+body {
+    background: #fff;
+    font: 13px 'Open Sans', sans-serif;
+    color: #222;
+  }
+  .recipe-card {
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(240,241,243,1);
+    -moz-box-shadow: 0px 0px 20px 1px rgba(240,241,243,1);
+    box-shadow: 0px 0px 20px 1px rgba(240,241,243,1);
+    border:1px solid #f0f1f3;
+    width: 300px;
+    margin: 50px auto;
+  }
+  .recipe-card__body {    
+      padding: 20px;
+  }
+  .recipe-card__heading {
+    padding: 0;
+    margin: 0 0 0;
+    color: #444;
+  }
+  .recipe-card__subhead {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  .recipe-card__ingredients {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    column-count: 1;
+
+  }
+  
+  .recipe-card__nav {
+    margin: 0 0 20px;
+    padding: 0;
+    border-bottom: 1px solid #eb9376;
+
+  }
+  
+  @media (min-width:599px) {
+    .recipe-card {
+      width: 600px
+    }
+    .recipe-card__ingredients {
+      column-count: 2
+    }
+  }
+
+  header{display: flex;
+    justify-content: center;
+    }
+
+.navMenu{position: sticky;
+top: 0px;
+background-color: white;}
+
+.navMenu ul{justify-content: center; 
+    display: flex; 
+border-top: gray solid 1px;
+border-bottom: black solid 1px;
+list-style: none }
+
+.navMenu ul li{
+padding: 10px 20px 10px 20px;}
+
+.submenu{text-decoration: none;
+color: black;}
+
+.submenu:hover{color: #7ABA96;}
+
+
+img{max-width: 100%;
+margin:auto;
+display: block;}
+
+nav.navMenu ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.navMenu ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.navMenu ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+    
+    
+    img{max-width: 100%;
+    margin:auto;
+    display: block;}

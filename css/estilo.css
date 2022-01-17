@@ -1,0 +1,130 @@
+header{display: flex;
+    justify-content: center;
+    }
+
+.navMenu{position: sticky;
+top: 0px;
+background-color: white;}
+
+.navMenu ul{justify-content: center; 
+    display: flex; 
+border-top: gray solid 1px;
+border-bottom: black solid 1px;
+list-style: none }
+
+.navMenu ul li{
+padding: 10px 20px 10px 20px;}
+
+.submenu{text-decoration: none;
+color: black;}
+
+.submenu:hover{color: #7ABA96;}
+
+
+img{max-width: 100%;
+margin:auto;
+display: block;}
+
+nav.navMenu ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.navMenu ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.navMenu ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+
+
+
+.suscribete {background-color: #EEEEEE;}
+
+.suscribete h4{background-color: #7ABA96; 
+    text-align: center;}
+
+.sobreMi h1{text-align: center;}
+
+.sobreMi p{text-align: justify;}
+
+.suscribete h3{text-align: center;}
+
+.recetas h3{justify-content: center;
+display: flex;}
+
+.nombre{text-decoration: none;
+color: black;}
+
+.nombre:hover{color:#8A8070}
+
+.contenido{display: flex;
+margin-left: 10%;
+margin-right: 10%; }
+
+.recetas{display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+
+}
+.recetas article{width: 45%;
+text-align: justify;
+margin-left: 5%;}
+
+.articulo{text-align: justify; }
+
+.fecha{display: flex;
+justify-content: center;
+border-top: solid rgb(94, 163, 94) 1px;
+border-bottom: solid rgb(94, 163, 94) 1px;
+}
+
+
+
+
+footer nav{background-color: black;
+}
+
+footer nav ul{list-style: none;
+display: flex;
+justify-content: center;}
+
+footer nav li{padding: 15px 25px 15px 25px;}
+
+.link{text-decoration: none;
+color: white;}
+
+.link:hover{color: #7aba96;}
+
